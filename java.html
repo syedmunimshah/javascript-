@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showtext()
+        {
+            let text=document.getElementById("inputtext").value;
+            if(text==0){
+                document.getElementById("para").innerHTML="Please fill text";
+            }
+            else{
+                document.getElementById("para").innerHTML=text;
+            }
+        }
+    </script>
+</head>
+<body>
+<form >
+    <input type="text" id="inputtext">
+    <input type="button" value="Click Me" onclick="showtext();">
+</form>
+<p id="para"></p>
+</body>
+</html>
